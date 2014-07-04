@@ -2,10 +2,42 @@
 <html>
 <head>
 	<title>flappybird html5</title>
+	<style>
+		body {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 14px;
+		}
+		a {
+			color: #563d7c;
+		}
+		.container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -350px 0 0 -250px;
+			width: 500px;
+			height: 700px;
+		}
+		canvas {
+			box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.75);
+			border: 1px solid #000;
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
 	
-	<canvas id="canvas" width="500" height="600"></canvas>
+	<div class="container">
+
+		<h1>flappybird html5</h1>
+
+		<canvas id="canvas" width="500" height="600"></canvas>
+		
+		<div class="info">
+			coded for a bit of fun by <a href="http://twitter.com/seanxe">@seanxe</a>. view the code on <a href="https://github.com/seanxe/flappybird-html5">github</a>
+		</div>
+
+	</div>
 	<script src="game.js"></script>
 
 </body>
